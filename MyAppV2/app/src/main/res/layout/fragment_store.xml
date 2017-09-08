@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F3F1F0">
+
+    <!-- NOT SO IMPORTANT CUSTOM UI STUFF -->
+
+    <RelativeLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_margin="10dp"
+        >
+
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="MICHAEL Michael Kors"
+            android:textColor="@color/orange"
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleText"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="Wool coat"
+            android:textColor="@color/grey"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text2"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_above="@+id/cost"
+            android:weightSum="100">
+
+
+            <TextView
+                android:id="@+id/menwomen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_weight="50"
+                android:padding="10dp"
+                android:textColor="@color/grey"
+                android:text="Linking a TextView to Another TextView Inside ScrollView in Android. HyperLink in a TextView inside a Scrollview not clickable. How to make android textview clickable inside ScrollView. Making TextView Scrollable in Android. How To Customise The TextView Inside A SpinnerLinking a TextView to Another TextView Inside ScrollView in Android." />
+
+
+            <RelativeLayout
+                android:id="@+id/placeLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:gravity="center">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v4.view.ViewPager>
+
+
+                <LinearLayout
+                    android:id="@+id/viewPagerIndicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_above="@+id/percentage"
+            android:padding="10dp"
+            android:text="Rs 2500"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/percentage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_above="@+id/divider"
+            android:padding="10dp"
+            android:text="50% off" />
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_above="@+id/bottom_layout"
+            android:background="@color/grey">
+
+        </View>
+        <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:weightSum="100"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_weight="50"
+                android:textColor="@color/grey"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:padding="10dp"
+                android:text="Gender" />
+
+
+            <TextView
+                android:id="@+id/genderValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_weight="50"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:textColor="@color/grey"
+                android:text="Women " />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

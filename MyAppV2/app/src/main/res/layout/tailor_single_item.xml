@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/popular_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="#F3F1F0"
+
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/item1_CV1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="4dp"
+        card_view:cardBackgroundColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:id="@+id/tailor_image"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:scaleType="fitXY"
+                android:background="@color/grey"
+                android:src="@drawable/tailor" />
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tailor_image"
+                android:weightSum="100"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/menLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:gravity="center">
+
+
+                    <ImageView
+                        android:id="@+id/menwomenImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_wc_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/menwomen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:text="Men and Women" />
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/placeLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:id="@+id/placeImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_place_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/place"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:text="Koramangala"/>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear"
+                android:weightSum="100"
+                android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/photoLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="39"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/photoImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_photo_library_black_24dp" />
+
+                <TextView
+                    android:id="@+id/treditional"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="Treditional" />
+
+
+
+            </LinearLayout>
+</LinearLayout>
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/linear1"
+                android:background="@color/darkergrey"
+                />
+
+            <LinearLayout
+                android:background="@android:color/white"
+                android:layout_below="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:id="@+id/linearLayout">
+
+                <TextView
+                    android:id="@+id/resource"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:textAllCaps="true"
+                    android:text="Contact Tailor"
+                    android:drawableRight="@drawable/ic_arrow_forward"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:background="#fff"
+                    android:gravity="bottom" />
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tailor_image"
+                android:layout_toRightOf="@+id/tailor_image"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:id="@+id/tailor_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="RAMESH TAILOR"
+                    android:textSize="17dp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/tailor_spec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="10dp"
+                    android:layout_below="@+id/tailor_name"
+                    android:text="Mens Specialist" />
+
+
+                <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                    android:id="@+id/ratingBar3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tailor_spec"
+                    android:layout_margin="8dp"
+                    app:srb_starBackgroundColor="@color/white"
+                    app:srb_fillColor="@color/material_greenA700"
+                    app:srb_borderColor="@color/material_white"
+                    app:srb_pressedFillColor="@color/material_greenA700"
+                    app:srb_starSize="20dp"
+                    app:srb_drawBorderEnabled="false"
+                    />
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
